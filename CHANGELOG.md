@@ -1,9 +1,8 @@
 # CHANGELOG
 
 ## v2.0.0 - 2022.08.18 17
-* use `Proxy` to handle logic
+* use `Proxy` to restruct and handle logic
 * we can operate CSS variables like `Object` now
-* update lea
 
 
 ## v1.0.0 - 2022.08.18 15
