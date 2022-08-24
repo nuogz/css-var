@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.0.1 - 2022.08.24 14
+* move main file to `src/index.js` from `src/css-var.js`
+* improve package info
+* update packages
+
+
 ## v2.0.0 - 2022.08.18 17
 * use `Proxy` to restruct and handle logic
 * we can operate CSS variables like `Object` now

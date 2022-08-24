@@ -1,26 +1,25 @@
 {
 	"name": "@nuogz/css-var",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "simple stateless CSS variables library for WEB",
 	"author": "Nuogz",
 	"license": "LGPL-3.0-or-later",
-	"main": "./src/css-var.js",
-	"type": "module",
-	"typesSource": [
-		"browser"
-	],
 	"repository": {
 		"type": "git",
 		"url": "github:nuogz/css-var"
 	},
-	"files": [
-		"src/css-var.js"
+	"type": "module",
+	"typesSource": [
+		"browser"
 	],
 	"engines": {
 		"node": ">=14.18.1"
 	},
+	"main": "./src/index.js",
+	"files": [
+		"./src/**"
+	],
 	"devDependencies": {
-		"@nuogz/pangu": "^2.1.1",
 		"eslint": "^8.22.0"
 	}
 }
