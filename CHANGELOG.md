@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v2.0.2 - 2022.08.30 02
+* fix `package.files`
+* bump up dependencies
+
+
 ## v2.0.1 - 2022.08.24 14
 * move main file to `src/index.js` from `src/css-var.js`
 * improve package info
