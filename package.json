@@ -1,7 +1,7 @@
 {
 	"name": "@nuogz/css-var",
-	"version": "2.0.2",
-	"description": "simple stateless CSS variables library for WEB",
+	"version": "2.0.3",
+	"description": "stateless CSS variables library for WEB",
 	"author": "Nuogz",
 	"license": "LGPL-3.0-or-later",
 	"repository": {
@@ -20,6 +20,6 @@
 		"src/**"
 	],
 	"devDependencies": {
-		"eslint": "^8.23.0"
+		"eslint": "^8.23.1"
 	}
 }

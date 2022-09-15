@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.0.3 - 2022.09.15 18
+* fix wrong `key` when get CSS variables
+* bump up dependencies
+
 ## v2.0.2 - 2022.08.30 02
 * fix `package.files`
 * bump up dependencies

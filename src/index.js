@@ -16,7 +16,7 @@ const newCV = (scope = HTML) => new Proxy(
 		get(self, key) {
 			if(key == '$') { return self; }
 
-			return self.get(`--${key}`);
+			return self.get(key);
 		},
 		set(self, key, value) {
 			return self.set(key, value), true;
