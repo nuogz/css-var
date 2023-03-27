@@ -1,35 +1,39 @@
-const HTML = document.documentElement;
+import CSSVar from './CSSVar.js';
 
 
-const newCV = (scope = HTML) => new Proxy(
-	Object.freeze({
-		scope,
-		new: newCV,
 
-		get(key) { return this.scope.style.getPropertyValue(`--${key}`); },
-		set(key, value) { return this.scope.style.setProperty(`--${key}`, value); },
-		del(key) { return this.scope.style.removeProperty(`--${key}`); },
+/**
+ * @param {HTMLElement} scope
+ * @returns {import('./CSSVarProxy.d.ts').CSSVarProxy & import('./CSSVarProxy.d.ts').CSSVarProxySelf}
+ */
+export const newCV = (scope = document.documentElement) => {
+	const cssvar = new CSSVar(scope);
 
-		setAll(values) { for(const key in values) { this.set(key, values[key]); } },
-	}),
-	{
-		get(self, key) {
-			if(key == '$') { return self; }
+	const cssvarFreeze = Object.freeze(cssvar);
 
-			return self.get(key);
-		},
-		set(self, key, value) {
-			return self.set(key, value), true;
-		},
-		deleteProperty(self, key) {
-			return self.del(key);
+	const result = new Proxy(
+		cssvarFreeze,
+		{
+			get(self, key) {
+				if(key == '$') { return self; }
+
+				return self.get(key);
+			},
+			set(self, key, value) {
+				return self.set(key, value, value?.endsWith?.('!important') ? true : false), true;
+			},
+			deleteProperty(self, key) {
+				return self.del(key);
+			}
 		}
-	}
-);
+	);
+
+	return result;
+};
+
 
 
 const CV = newCV();
 
-
-
 export default CV;
+export { CSSVar };

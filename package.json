@@ -1,6 +1,6 @@
 {
 	"name": "@nuogz/css-var",
-	"version": "2.0.3",
+	"version": "3.0.0",
 	"description": "stateless CSS variables library for WEB",
 	"author": "Nuogz",
 	"license": "LGPL-3.0-or-later",
@@ -19,7 +19,11 @@
 	"files": [
 		"src/**"
 	],
+	"scripts": {
+		"emitDeclaration": "tsc ./src/index.js --declaration --emitDeclarationOnly --allowJs"
+	},
 	"devDependencies": {
-		"eslint": "^8.36.0"
+		"eslint": "^8.36.0",
+		"typescript": "^5.0.2"
 	}
 }

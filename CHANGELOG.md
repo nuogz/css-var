@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v3.0.0 - 2023.03.27 19
+* extract base class `CSSVar` from old codes
+	* so we can use `css-var` by a normal class now
+* add declaration files
+
+
 ## v2.0.3 - 2022.09.15 18
 * fix wrong `key` when get CSS variables
 * bump up dependencies
