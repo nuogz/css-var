@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.0.1 - 2023.12.05 11
+* tweak some enviroment
+* bump up dependencies
+
 ## v3.0.0 - 2023.03.27 19
 * extract base class `CSSVar` from old codes
 	* so we can use `css-var` by a normal class now
