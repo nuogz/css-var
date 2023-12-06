@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ## v3.0.1 - 2023.12.05 11
-* tweak some enviroment
+* tweak enviroment
 * bump up dependencies
 
 

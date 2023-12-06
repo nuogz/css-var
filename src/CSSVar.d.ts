@@ -16,7 +16,7 @@ export default class CSSVar {
      * @param {boolean} [important=false]
      * @returns {void}
      */
-    set(key: string, value: string | null, important?: boolean): void;
+    set(key: string, value: string | null, important?: boolean | undefined): void;
     /**
      * @param {string} key
      * @returns {string}

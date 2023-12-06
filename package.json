@@ -8,11 +8,11 @@
 		"type": "git",
 		"url": "github:nuogz/css-var"
 	},
+	"private": false,
 	"type": "module",
 	"typesSource": [
 		"browser"
 	],
-	"typings": "./src/index.d.ts",
 	"sideEffects": false,
 	"engines": {
 		"node": ">=14.18.1"
@@ -22,9 +22,11 @@
 		"src/**",
 		"**/*.d.ts"
 	],
+	"typings": "./src/index.d.ts",
 	"scripts": {
-		"emitDeclaration": "tsc ./src/index.js --declaration --emitDeclarationOnly --allowJs"
+		"emitDeclaration": "tsc ./src/index.js --declaration --emitDeclarationOnly --moduleResolution bundler --module esnext --target esnext --experimentalDecorators --strict --allowJs --jsx preserve"
 	},
+	"dependencies": {},
 	"devDependencies": {
 		"eslint": "^8.55.0",
 		"typescript": "^5.3.2"
